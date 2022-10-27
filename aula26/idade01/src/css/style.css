@@ -38,6 +38,13 @@ main#main {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.377);
 }
 
+img {
+  margin-top: 3mm;
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+}
+
 footer {
   font-style: italic;
 }
