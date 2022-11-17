@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Titulo</h1>
+    </header>
+
+    <main id="main">
+        <table id="principal" border="1" width="50%">
+            <tr>
+                <td>Parcela</td>
+                <td>Vencimento</td>
+                <td>Valor</td>
+                <td>Forma de Pagamento</td>
+                <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td><input value="1" name="parcela[]" type="text" /></td>
+                <td><input value="01/01/2014" name="vencimento[]" type="text" /></td>
+                <td><input value="250,25" name="valor[]" type="text" /></td>
+                <td>
+                    <select name="opcao[]">
+                        <option value="1">Dinheiro</option>
+                        <option value="2">Cartão de Crédito</option>
+                    </select>
+                </td>
+                <td>
+                    <a href="javascript:;">Remover</a>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2022 - CURSOS PÓS RIO
+        <p>
+    </footer>
+
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>
