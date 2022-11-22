@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo</title>
 
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- MEU ESTILO CSS -->
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
@@ -17,30 +22,38 @@
     </header>
 
     <main id="main">
-        <table id="principal" border="1" width="50%">
-            <tr>
-                <td>Parcela</td>
-                <td>Vencimento</td>
-                <td>Valor</td>
-                <td>Forma de Pagamento</td>
-                <td>&nbsp;</td>
-            </tr>
 
-            <tr>
-                <td><input value="1" name="parcela[]" type="text" /></td>
-                <td><input value="01/01/2014" name="vencimento[]" type="text" /></td>
-                <td><input value="250,25" name="valor[]" type="text" /></td>
-                <td>
-                    <select name="opcao[]">
-                        <option value="1">Dinheiro</option>
-                        <option value="2">Cartão de Crédito</option>
-                    </select>
-                </td>
-                <td>
-                    <a href="javascript:;">Remover</a>
-                </td>
-            </tr>
+        <div>
+            <fieldset>
+                <legend>Formulario</legend>
+                <div class="mb-3">
+                    <label for="parcela" class="form-label">Parcela</label>
+                    <input type="text" id="parcela" class="form-control" placeholder="Digite uma parcela">
+                </div>
+
+                <div class="mb-3">
+                    <label for="vencimento" class="form-label">Vencimento</label>
+                    <input type="text" id="vencimento" class="form-control" placeholder="Digite um vencimento">
+                </div>
+                <div class="mb-3">
+                    <label for="valor" class="form-label">Valor</label>
+                    <input type="text" id="valor" class="form-control" placeholder="Digite um valor">
+                </div>
+                <button class="btn btn-primary">Adicionar</button>
+            </fieldset>
+        </div>
+
+        <table id="principal" class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Parcela</th>
+                    <th scope="col">Vencimento</th>
+                    <th scope="col">Valor</th>
+                </tr>
+            </thead>
+            <tbody id="dados"></tbody>
         </table>
+
     </main>
 
     <footer>
@@ -48,7 +61,21 @@
         <p>
     </footer>
 
+
+    <!-- SCRIPT BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+
+    <!-- MEU SCRIPT -->
     <script src="./src/js/script.js"></script>
+
 </body>
 
 </html>
