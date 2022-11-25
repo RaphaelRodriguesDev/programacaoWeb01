@@ -1,32 +1,60 @@
+let resultado = document.querySelector(".result");
+
 const dados = [
-    {
-        nome: "Raphael",
-        idade: 30,
-    },
-    {
-        nome: "Erisvan",
-        idade: 30,
-    },
-    {
-        nome: "Gabriel",
-        idade: 30,
-    },
-    {
-        nome: "André",
-        idade: 30,
-    },
+	{
+		nome: "Raphael",
+    idade: 31,
+		cpf: "123.123.122-67"
+  },
+
+  {
+		nome: "Andre",
+		idade: 17,
+		cpf: "123.123.122-67"
+	},
+
+  {
+		nome: "Gabriel",
+		idade: 27,
+		cpf: "123.123.122-67"
+	},
+
+	{
+		nome: "Erisvan",
+		idade: 27,
+		cpf: "123.123.122-67"
+	},
+
+	{
+		nome: "Erisvan",
+		idade: 27,
+		cpf: "123.123.122-67"
+	},
 ];
 
 dados.forEach((dado) => {
-    localStorage.setItem("nome", dado.nome);
-    localStorage.setItem("idade", dado.idade);
-    //-------------------------
-    const nome = localStorage.getItem("nome");
-    const idade = localStorage.getItem("idade");
+	
+	//Enviando arquivos para o local storage
+	localStorage.setItem("nome", dado.nome);
+	localStorage.setItem("idade", dado.idade);
+	localStorage.setItem("cpf", dado.cpf);
 
-    //-------------------------
+	//Capturando arquivos do local storage
+	const nome = localStorage.getItem("nome");
+	const idade = localStorage.getItem("idade");
+	const cpf = localStorage.getItem("cpf");
 
-    document.write(`<h2>Nome: ${nome} | Idade: ${idade} </h2>`);
+	//Exibindo Resultado
+	resultado.innerHTML += `
+	
+		<tr>
+			<td>${nome}</td> 
+			<td>${idade}</td> 
+			<td>${cpf}</td>
+		</tr>
+	`;
+
 });
 
-document.write(nome);
+
+console.log(resultado);
