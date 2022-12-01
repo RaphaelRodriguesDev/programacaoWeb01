@@ -9,21 +9,19 @@ function Garcom(nome, cpf) {
   this.nome = nome;
   this.cpf = cpf;
 
-  this.levarPedido = (pedido, cliente) => { 
-     return `O Garçom ${this.nome} está levando o  pedido ${pedido} para o cliente ${cliente}`
-   } 
+  this.levarPedido = (pedido, cliente) => {
+    return `O Garçom ${this.nome} está levando o  pedido ${pedido} para o cliente ${cliente}`;
+  };
 }
 
-
-function Pedido(numero, bebida, pizza){
-	this.numero = numero;
-	this.bebida = bebida;
-	this.pizza = pizza;
+function Pedido(numero, bebida, pizza) {
+  this.numero = numero;
+  this.bebida = bebida;
+  this.pizza = pizza;
 }
-
 
 function Cliente(nome, cpf) {
-	this.nome = nome;
+  this.nome = nome;
   this.cpf = cpf;
 }
 
