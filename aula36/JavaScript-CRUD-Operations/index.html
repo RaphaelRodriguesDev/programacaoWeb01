@@ -3,32 +3,32 @@
 
 <head>
     <title>
-        Vanilla JS CRUD Operation
+        CRUD Operation
     </title>
     <link rel="stylesheet" href="./src/css/styles.css">
 </head>
 
 <body>
-    <h2>User BioData Registration</h2>
+    <h2>Registro de dados</h2>
     <table>
         <tr>
             <td>
                 <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                     <div>
-                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This
-                            field is required.</label>
+                        <label>Nome Completo*</label><label class="validation-error hide"
+                            id="fullNameValidationError">CAMPO OBRIGATÓRIO.</label>
                         <input type="text" name="fullName" id="fullName">
                     </div>
                     <div>
-                        <label>EMP Code</label>
+                        <label>Código</label>
                         <input type="text" name="empCode" id="empCode">
                     </div>
                     <div>
-                        <label>Salary</label>
+                        <label>Salário</label>
                         <input type="text" name="salary" id="salary">
                     </div>
                     <div>
-                        <label>City</label>
+                        <label>Cidade</label>
                         <input type="text" name="city" id="city">
                     </div>
                     <div class="form-action-buttons">
@@ -40,11 +40,11 @@
                 <table class="list" id="employeeList">
                     <thead>
                         <tr>
-                            <th>Full Name</th>
-                            <th>EMP Code</th>
-                            <th>Salary</th>
-                            <th>City</th>
-                            <th>Operation</th>
+                            <th>Nome Completo</th>
+                            <th>Código</th>
+                            <th>Salário</th>
+                            <th>Cidade</th>
+                            <th>Operação</th>
                         </tr>
                     </thead>
                     <!-- to dynamically add record on data submission -->
