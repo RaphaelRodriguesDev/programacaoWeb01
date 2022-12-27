@@ -9,3 +9,7 @@ div.box {
     padding: 20px;
     border-radius: 8px;
 }
+
+div.card {
+    margin: 10px;
+}
